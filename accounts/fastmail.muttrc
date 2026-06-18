@@ -1,0 +1,30 @@
+# Identity
+set realname  = "Stefan Wong"
+set from      = "stfnwong@fastmail.com"
+set use_from  = yes
+set envelope_from = yes
+
+# Credentials
+set imap_user = "stfnwong@fastmail.com"
+set imap_pass = `pass email/stfnwong_fastmail`
+set smtp_pass = `pass email/stfnwong_fastmail`
+
+# Incoming
+set folder    = "imaps://imap.fastmail.com:993"
+set imap_idle = yes          # push notification rather than polling
+
+# Outgoing
+set smtp_url  = "smtps://stfnwong@fastmail.com@smtp.fastmail.com:465"
+set ssl_force_tls = yes
+
+# Folders — Fastmail's conventional names
+set spoolfile = "+INBOX"
+set record    = "+Sent"
+set postponed = "+Drafts"
+set trash     = "+Trash"
+
+# Tell the sidebar/mailboxes about them
+mailboxes +INBOX +Drafts +Sent +Archive +Spam +Trash
+
+# Save sent mail locally to the Sent folder on the server
+set copy = yes
