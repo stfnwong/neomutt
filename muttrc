@@ -1,0 +1,18 @@
+# in muttrc
+source ~/.config/neomutt/accounts/stfnwong_fastmail.muttrc
+#source ~/.config/mutt/colours.muttrc
+source ~/.config/neomutt/keybindings.muttrc
+
+
+set sleep_time        = 0         # no pause between operations
+set wait_key          = no        # don't prompt "press key to continue" after external commands
+set delete            = yes       # don't confirm deletions
+set confirmappend     = no        # don't confirm when appending to mailboxes
+set quit              = yes       # don't confirm quit
+set timeout           = 30        # poll for new mail every 30s
+set mail_check        = 30
+set mail_check_stats  = yes       # update unread counts in sidebar
+
+# GPG integration
+set crypt_auto_sign   = no        # don't sign everything (annoying for most people)
+set crypt_opportunistic_encrypt = yes  # encrypt when all recipients have keys

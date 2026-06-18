@@ -1,0 +1,17 @@
+# vim-style navigation everywhere
+bind index,pager g  noop
+bind index       gg first-entry
+bind index       G  last-entry
+bind index       \Cd next-page
+bind index       \Cu previous-page
+
+bind pager       j  next-line
+bind pager       k  previous-line
+bind pager       gg top
+bind pager       G  bottom
+
+# Archive keybind (move to Archive folder)
+macro index,pager A  "<save-message>=Archive<enter>" "Archive message"
+
+# Quick sync
+bind index       \Cr imap-fetch-mail
