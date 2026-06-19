@@ -1,0 +1,8 @@
+color normal      default         default
+color index       green           default  "~N"          # new messages
+color index       brightred       default  "~F"          # flagged
+color index       brightblack     default  "~D"          # deleted
+color quoted      cyan            default
+color quoted1     brightblue      default
+color signature   brightblack     default
+color header      brightyellow    default  "^(From|Subject|Date):"

@@ -1,6 +1,6 @@
 # in muttrc
 source ~/.config/neomutt/accounts/stfnwong_fastmail.muttrc
-#source ~/.config/mutt/colours.muttrc
+source ~/.config/neomutt/colours.muttrc
 source ~/.config/neomutt/keybindings.muttrc
 
 
